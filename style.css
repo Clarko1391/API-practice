@@ -1,0 +1,72 @@
+*{
+    --textWhite: #FFFCF2;
+    --bgGrey: #CCC5B9;
+    --darkAccent: #403D39;
+    --blackAccent: #252422;
+    --chuckAccent: #EB5E28;
+    color: var(--textWhite);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--bgGrey)
+    
+}
+
+.jokeBox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#title {
+    width: fit-content;
+    color: var(--chuckAccent);
+    text-transform: uppercase;
+    font-size: 3vh;
+}
+
+#joke {
+    min-width: 200px;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--blackAccent);
+    border-radius: 5px;
+}
+
+#jokeBtn {
+    border: none;
+    width: fit-content;
+    padding: 10px;
+    background-color:var(--blackAccent);
+    color: var(--textWhite);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#jokeBtn:hover {
+    background-color: var(--chuckAccent);
+    color: var(--darkAccent);
+}
+
+#jokeBtn:focus {
+    border: none;
+    border-style: none;
+    outline: none;
+}
+
+h2 {
+    font-size: larger;
+    text-transform: uppercase;
+    color:var(--textWhite);
+}
