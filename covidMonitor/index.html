@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Covid19 Monitor</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div id="covidBG"></div>
+        <div id="topWrapper">
+            <div id="title">
+                <h1>Covid19 Monitor</h1>
+                <h3>See current stats about Coronavirus from all over the world</h3>
+                <h3 id="dateTime">date/time goes here</h3>
+            </div>
+            <div id="input">
+                <input type="text" id="countryInput" placeholder="Enter a country name to see Covid stats">
+                <button id="enterCountry">Show me the stats</button>
+            </div>
+        </div>
+        <div id="bottomWrapper">
+            <div id="statsWrapper">
+                <div class="statBox">
+                    <h2>New Cases</h2>
+                    <p id="newCases">entry a country name to see details</p>
+                </div>
+                <div class="statBox" id="activeCases">
+                    <h2>Active Cases</h2>
+                    <p id="activeCases">entry a country name to see details</p>
+                </div>
+                <div class="statBox" id="recoveredCases">
+                    <h2>Recovered Cases</h2>
+                    <p id="recoveredCases">entry a country name to see details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+</html>
