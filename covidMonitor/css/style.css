@@ -3,6 +3,8 @@
     --salmon: #ff4e7b;
     --white: #f3f3f3;
     --black: #0e0e0e;
+    --darkBlue: #0f5287;
+    --lightBlue: #0a7cad;
 }
 
 *{
@@ -11,11 +13,19 @@
     margin: 0;
 }
 
+p, h1, h2, h3 {
+    padding: 0px 10px;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
 body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: var(--blue);
+    background-color: var(--darkBlue);
 }
 
 /* Main elements */
@@ -115,9 +125,23 @@ body{
     align-items: center;
     height: 50vh;
     width: 100%;
+    background-image: linear-gradient(to bottom right, var(--lightBlue), var(--darkBlue), var(--darkBlue));
+}
+
+#countryDisplay {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+#countryName {
+    margin: 10px 0px;
+    color: var(--salmon);
 }
 
 #statsWrapper {
+    width: 100%;
+    height: 85%;
     display: grid;
     grid: auto / auto;
     justify-content: space-evenly;
@@ -128,8 +152,6 @@ body{
 
 .statBox {
     text-align: center;
-    min-width: 300px;
-    min-height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
